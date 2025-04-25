@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  
+  #cadGastos {
+    background-color: rgba(31, 30, 31, 0.6);
+    border: 5px solid #272727;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilização geral do formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-self: flex-start;
+    padding-left: 10%;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 80%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+
+  
+  
+  /* Botão principal (Salvar) */
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00b894;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #019875;
+  }
+  
+  
+  /* Container da tabela */
+  #table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  /* Estilo da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Células da tabela */
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Cabeçalho da tabela */
+  th {
+    background-color: #333;
+    color: white;
+  }
