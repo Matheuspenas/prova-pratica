@@ -15,27 +15,29 @@
 </head>
 <body>
     <!-- Formulário de Adição de Tarefa -->
-    <div id="cadGastos">
-        <form id="gastosForm">
-          <!-- Campo para adição da Tarefa -->
-          <label for="Adicionar">Adicionar Tarefa</label>
-          <input
-            type="text"
-            id="Adicionar"
-            placeholder="Ex: Reunião"
-            required
-          />
-    <!-- Campo para Adição da data da tarefa -->
-    <label for="Adicionar">Adicionar data da Tarefa</label>
-    <input
-      type="date"
-      id="Adicionar"
-      placeholder="dia/mês/ano"
-      required
-    />
-    
-    <!-- Botão de envio do formulário -->
-    <button type="submit" id="btnSubmit">Salvar</button>
+     <div id="cadGastos">
+        <form id="listaForm">
+               <!-- Campo para adição da Tarefa -->
+               <label for="Adicionar">Adicionar Tarefa</label>
+               <input
+                 type="text"
+                 id="Adicionar"
+                 placeholder="Ex: Reunião"
+                 required
+               />
+         <!-- Campo para Adição da data da tarefa -->
+         <label for="data">Adicionar data da Tarefa</label>
+         <input
+           type="date"
+           id="data"
+           placeholder="dia/mês/ano"
+           required
+         />
+         
+         <!-- Botão de envio do formulário -->
+         <button type="submit" id="btnSubmit">Salvar</button>
+        </form>
+     </div>
 
       <!-- Tabela da lista de tarefas -->
       <div id="table">
