@@ -21,6 +21,7 @@ document.getElementById("listaForm").addEventListener("submit", function (e) {
     }
 
     criarLista();
+    atualizarContadores();
     this.reset();
 });
 
@@ -65,12 +66,14 @@ function criarLista() {
 
     tabela += `</tbody>`;
     document.getElementById("tabela").innerHTML = tabela;
+    atualizarContadores();
 }
 
 // Alterar estado da tarefa
 function alterarEstado(index) {
     dadosLista[index].concluida = !dadosLista[index].concluida;
     criarLista();
+    atualizarContadores();
 }
 
 // Excluir
@@ -78,6 +81,7 @@ function excluirTarefa(index) {
     if (modoEdicao) return;
     dadosLista.splice(index, 1);
     criarLista();
+    atualizarContadores();
 }
 
 // Editar
@@ -91,4 +95,15 @@ function editarTarefa(index) {
     modoEdicao = true;
     indexEdicao = index;
     document.getElementById("btnSubmit").textContent = "Atualizar";
+}
+
+// Atualizar contadores de tarefas
+function atualizarContadores() {
+    const totalConcluidas = dadosLista.filter(item => item.concluida).length;
+    const totalPendentes = dadosLista.length - totalConcluidas;
+
+    document.getElementById("contador").innerHTML = `
+        <p>Tarefas Concluídas: ${totalConcluidas}</p>
+        <p>Tarefas Pendentes: ${totalPendentes}</p>
+    `;
 }

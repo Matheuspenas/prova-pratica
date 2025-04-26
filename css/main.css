@@ -127,3 +127,19 @@ body {
     background-color: #333;
     color: white;
   }
+
+  #contador {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid 2px #00b894;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00b894;
+    text-align: center;
+    margin-top: 20px;
+  }
