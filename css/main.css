@@ -66,6 +66,37 @@ body {
   }
   
   
+  /* Botão de editar */
+  button.editar {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button.editar:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Botão de excluir */
+  button.excluir {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button.excluir:hover {
+    background-color: #c0392b;
+  }
+  
+  
   /* Container da tabela */
   #table {
     width: 90%;

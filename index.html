@@ -6,49 +6,51 @@
     <title>To do List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
-    <script src='/js/main.js'></script>
-      <!-- script que permite a adição de ícones através do Font Awesome -->
-      <script
+    <script src='/js/main.js' defer></script>
+    <!-- script que permite a adição de ícones através do Font Awesome -->
+    <script
       src="https://kit.fontawesome.com/837fbc3de2.js"
       crossorigin="anonymous"
+      defer
     ></script>
 </head>
 <body>
     <!-- Formulário de Adição de Tarefa -->
-     <div id="cadGastos">
+    <div id="cadGastos">
         <form id="listaForm">
-               <!-- Campo para adição da Tarefa -->
-               <label for="Adicionar">Adicionar Tarefa</label>
-               <input
-                 type="text"
-                 id="Adicionar"
-                 placeholder="Ex: Reunião"
-                 required
-               />
-         <!-- Campo para Adição da data da tarefa -->
-         <label for="data">Adicionar data da Tarefa</label>
-         <input
-           type="date"
-           id="data"
-           placeholder="dia/mês/ano"
-           required
-         />
-         
-         <!-- Botão de envio do formulário -->
-         <button type="submit" id="btnSubmit">Salvar</button>
+            <!-- Campo para adição da Tarefa -->
+            <label for="Adicionar">Adicionar Tarefa</label>
+            <input
+                type="text"
+                id="Adicionar"
+                placeholder="Ex: Reunião"
+                required
+            />
+            <!-- Campo para Adição da data da tarefa -->
+            <label for="data">Adicionar data da Tarefa</label>
+            <input
+                type="date"
+                id="data"
+                placeholder="dia/mês/ano"
+                required
+            />
+            <!-- Botão de envio do formulário -->
+            <button type="submit" id="btnSubmit">Salvar</button>
         </form>
-     </div>
+    </div>
 
-      <!-- Tabela da lista de tarefas -->
-      <div id="table">
+    <!-- Tabela da lista de tarefas -->
+    <div id="table">
         <table id="tabela">
-          <thead>
-            <tr>
-              <th>tarefas</th>
-              <th>Datas</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
+            <thead>
+                <tr>
+                    <th>Tarefas</th>
+                    <th>Datas</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
         </table>
+    </div>
 </body>
 </html>
